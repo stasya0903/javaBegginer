@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script>
+function addition (a,b){
+    var summary= a+b
+    return summary
+}
+function multiply (a,b){
+    var c = a*b
+    return c
+}
+function deduction (a,b){
+    var difference = a-b
+    return difference
+}
+function division (a,b){
+    var difference= a/b
+    return difference
+}
+		function mathOperation (a, b, operation) {
+			switch (operation){
+				case multiply :
+				var production = multiply(a,b)
+				alert("Production of  " + a + " and "+ b + " is "+ production);
+				break;
+				case deduction :
+				var difference = deduction(a,b)
+				alert("dufference of  " + a + " and "+ b + " is "+ difference);
+				break;
+				case multiply :
+				var production = addition(a,b)
+				alert("Summary of  " + a + " and "+ b + " is "+ summary);
+				break;
+				case division :
+				var difference = division(a,b)
+				alert("Difference of  " + a + " and "+ b + " is "+ difference);
+				break;
+				
+				
+			}
+			
+
+		}
+
+mathOperation (2,4,multiply)
+
+
+	</script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>
