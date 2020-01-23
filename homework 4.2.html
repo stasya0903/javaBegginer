@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        basket = {
+            products: [
+                {
+                    name: "coca-cola",
+                    price: 15,
+                    amount: 1,
+                
+
+                },
+                {
+                    name: "coca-cola",
+                    price: 25,
+                    amount: 2,
+                    
+                },
+                {
+                    name: "pepsi",
+                    price: 17,
+                    amount: 1,
+                
+                },
+
+
+            ],
+            countBasketPrice: function () {
+                totalAll = 0;
+    
+                for (i = 0; i < this.products.length; i++) {
+                    var currentProduct = this.products[i]
+                    var totalForProduct = currentProduct.price * currentProduct.amount
+                     totalAll += totalForProduct
+                }
+                return totalAll
+
+
+
+            }
+
+
+
+        }
+        basket.countBasketPrice ()
+    </script>
+   </head> <body>
+
+        </body>
+
+</html>
